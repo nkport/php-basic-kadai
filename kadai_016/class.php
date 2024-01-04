@@ -1,3 +1,14 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <title>【ページのタイトル】</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
 <?php
 class Food
 {
@@ -10,6 +21,7 @@ class Food
     }
     public function showPrice()
     {
+        echo $this->price . '<br>';
         return $this->price;
     }
 }
@@ -26,6 +38,7 @@ class Animal
     }
     public function showHeight()
     {
+        echo $this->height;
         return $this->height;
     }
 
@@ -39,7 +52,11 @@ echo '<br>';
 print_r($dog);
 echo '<br>';
 
-echo $potato->showPrice() . '<br>';
-echo $dog->showHeight() . '<br>';
+$potato->showPrice();
+$dog->showHeight();
 
 ?>
+
+</body>
+
+</html>
